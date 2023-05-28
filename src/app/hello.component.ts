@@ -9,6 +9,9 @@ import { Component, Input } from '@angular/core';
         <li><a mat-button routerLink="/events">
             <b>Tantárgyak</b>
           </a></li>
+          <li><a mat-button routerLink="/instructors">
+          <b>Oktatók</b>
+        </a></li>
       </ul>
     </nav>
   </mat-card>`,
