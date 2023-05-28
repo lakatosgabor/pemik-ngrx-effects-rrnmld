@@ -18,7 +18,7 @@ export class InstructorEffects {
     ofType(InstructorActionTypes.instructorsRequested),
     mergeMap(() => this.instructorService.getEvents()
       .pipe(
-        map(instructors => (eventsLoadedAction({instructors}))),
+        map(instructors => (instructorLoadedAction({instructors}))),
         catchError(() => EMPTY)
       ))
     )
