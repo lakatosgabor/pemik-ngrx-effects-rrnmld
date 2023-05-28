@@ -14,7 +14,7 @@ export const eventsLoadedAction = createAction(
   props<{instructors: Instructor[]}>()
 );
 
-export const deleteInstructors = createAction(
+export const deleteInstructor = createAction(
   '[Instructors] Delete Instructor',
   props<{instructorId}>()
 );

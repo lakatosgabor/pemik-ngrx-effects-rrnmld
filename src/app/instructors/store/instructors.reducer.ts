@@ -1,7 +1,7 @@
 import { createReducer, on, Action } from '@ngrx/store';
 
-import { eventsLoadedAction, deleteEvent } from './instructors.actions';
-import { Event } from './instructors.model';
+import { eventsLoadedAction, deleteInstructor } from './instructors.actions';
+import { Instructor } from './instructors.model';
 
 export const instructorsFeatureKey = 'instructors';
 
