@@ -7,9 +7,7 @@ import { InstructorActionTypes, instructorLoadedAction } from './instructors.act
 
 @Injectable()
 export class InstructorEffects {
-
   loadMovies$;
-
   constructor(
     private actions$: Actions,
     private instructorService: InstructorService
