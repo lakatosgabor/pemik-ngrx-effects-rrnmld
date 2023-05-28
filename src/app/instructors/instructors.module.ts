@@ -9,9 +9,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { StoreModule } from '@ngrx/store';
 
-import { HighlightDirective } from '../directives/highlight.directive';
-import { FirstLetterPipe } from '../pipes/first-letter.pipe';
-
 import { InstructorsRoutingModule } from './instructors-routing.module';
 import { InstructorsComponent } from './instructors.component';
 import { InstructorListComponent } from '../instructor-list/instructor-list.component';
@@ -39,7 +36,7 @@ import { InstructorEffects } from './store/instructors.effects';
   declarations: [
     InstructorListComponent, InstructorSocialComponent,
     InstructorDetailsComponent, InstructorCreateComponent,
-    InstructorsComponent, HighlightDirective, FirstLetterPipe
+    InstructorsComponent
   ],
   providers: [
     InstructorService, InstructorNameValidator
