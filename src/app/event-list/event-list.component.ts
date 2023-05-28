@@ -33,5 +33,4 @@ export class EventListComponent implements OnInit {
   onNotify(event){
     alert('Event \'' + event.name + '\' liked');
   }
-
 }
