@@ -7,6 +7,11 @@ import { StoreModule } from '@ngrx/store';
 import * as fromInstructors from './store/instructors.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { InstructorEffects } from './store/instructor.effects';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   imports: [
