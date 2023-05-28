@@ -6,7 +6,7 @@ export enum InstructorActionTypes {
   instructorsLoaded = '[Instructors] Instructors Loaded'
 }
 
-export const nstructorsRequestedAction = createAction(
+export const instructorsRequestedAction = createAction(
   InstructorActionTypes.instructorsRequested
 );
 export const instructorLoadedAction = createAction(
