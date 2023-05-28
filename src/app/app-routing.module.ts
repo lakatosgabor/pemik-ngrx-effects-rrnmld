@@ -6,20 +6,25 @@ import { AuthGuard } from './auth/auth.guard';
 const routes: Routes = [
   {
     path: 'events',
-    loadChildren: () => import('./events/events.module').then(m => m.EventsModule),
-    canLoad: [AuthGuard]
+    loadChildren: () =>
+      import('./events/events.module').then((m) => m.EventsModule),
+    canLoad: [AuthGuard],
+  },
+  {
+    path: 'instructors',
+    loadChildren: () =>
+      import('./instructors/instructors.module').then((m) => m.EventsModule),
+    canLoad: [AuthGuard],
   },
   {
     path: '',
     redirectTo: '',
-    pathMatch: 'full'
-  }
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
