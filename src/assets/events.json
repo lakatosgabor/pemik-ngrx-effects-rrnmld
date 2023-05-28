@@ -2,7 +2,6 @@
     {
       "id": 1,
       "name": "Haladó web alapú programfejlesztés",
-      "start": "2020-05-19T15:30:00",
       "description": "There will be food...",
       "likes": 20
     },
@@ -15,7 +14,6 @@
     {
       "id": 3,
       "name": "Numerikus analízis",
-      "start": "2020-06-21T6:30:00", 
       "description": "Training means drinking beers.",
       "likes": 69
     }
