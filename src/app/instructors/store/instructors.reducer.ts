@@ -15,10 +15,10 @@ export const initialState: InstructorsFeatureState = {
 
 export const instructorsReducer = createReducer(
   initialState,
-  on(eventsLoadedAction, (state, {events}) => ({...state, events})),
+  on(eventsLoadedAction, (state, {instructors}) => ({...state, instructors})),
   on(deleteInstructor, (state, { instructorId }) => {
     return {
-      instructors: state.instructors.filter(evt => ins.id !== instructorId)
+      instructors: state.instructors.filter(inst => inst.id !== instructorId)
     }
   })
 )
