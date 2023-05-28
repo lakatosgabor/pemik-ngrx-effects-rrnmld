@@ -13,7 +13,7 @@ const routes: Routes = [
   {
     path: 'instructors',
     loadChildren: () =>
-      import('./instructors/instructors.module').then((m) => m.EventsModule),
+      import('./instructors/instructors.module').then((m) => m.InstructorsModule),
     canLoad: [AuthGuard],
   },
   {
