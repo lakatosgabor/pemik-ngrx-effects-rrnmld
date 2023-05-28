@@ -9,13 +9,7 @@
 <div style="margin-bottom: 10px" *ngFor="let event of events$ | async">
 <mat-card>
   <mat-card-header>
-    <div mat-card-avatar>
-      <i class="material-icons">event</i>
-    </div>
     <mat-card-title>
-        <button mat-mini-fab color="accent">
-          {{event.name | mFirstLetter}}
-        </button>
       <a mat-button [title]="event.name + ' details'" [routerLink]="['/events/details', event.id]">
         <b>{{event.name | uppercase}}</b>
       </a>
@@ -27,11 +21,5 @@
       {{event.description}}
     </p>
   </mat-card-content>
-  <mat-card-actions>
-    <app-event-social [event]="event" (notify)="onNotify($event)"></app-event-social>
-    <button title="Delete event" (click)="onDeleteEvent(event.id)" mat-raised-button color="warn">
-      <i class="material-icons">remove_circle</i>
-    </button>
-  </mat-card-actions>
 </mat-card>
 </div>
