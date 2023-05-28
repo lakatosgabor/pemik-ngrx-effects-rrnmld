@@ -9,7 +9,7 @@ export enum InstructorActionTypes {
 export const nstructorsRequestedAction = createAction(
   InstructorActionTypes.instructorsRequested
 );
-export const eventsLoadedAction = createAction(
+export const instructorLoadedAction = createAction(
   InstructorActionTypes.instructorsLoaded,
   props<{instructors: Instructor[]}>()
 );
