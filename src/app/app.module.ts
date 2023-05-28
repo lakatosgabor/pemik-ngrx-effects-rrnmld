@@ -22,7 +22,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { EventsFeatureState } from './events/store/events.reducer';
-import { InMemoryInstructorService } from './in-memory-instructor.service';
 
 export interface AppState {
   eventsFeature: EventsFeatureState;
@@ -31,7 +30,6 @@ export interface AppState {
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, HttpClientModule,
   environment.isMockEnabled ? HttpClientInMemoryWebApiModule.forRoot(InMemoryEventService) : [],
-  environment.isMockEnabled ? HttpClientInMemoryWebApiModule.forRoot(InMemoryInstructorService) : [],
   StoreModule.forRoot({}),
   EffectsModule.forRoot(),
   AppRoutingModule,
@@ -43,6 +41,6 @@ export interface AppState {
     MatProgressSpinnerModule,],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [InMemoryEventService, InMemoryInstructorService, RequestService, httpInterceptorProviders, AuthService]
+  providers: [InMemoryEventService, RequestService, httpInterceptorProviders, AuthService]
 })
 export class AppModule { }
